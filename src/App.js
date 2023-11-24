@@ -65,7 +65,7 @@ function AddNewNotes({ onOpenForm }) {
   return (
     <div
       onClick={onOpenForm}
-      className="border h-[300px] hover:scale-105 cursor-pointer hover:bg-opacity-95 transition-all w-[260px] rounded-md bg-white flex flex-col items-center justify-center gap-5 "
+      className="border shadow-xl h-[300px] hover:scale-105 cursor-pointer hover:bg-opacity-95 transition-all w-[260px] rounded-md bg-white flex flex-col items-center justify-center gap-5 "
     >
       <div className="text-sky-400 text-5xl border-2 border-dashed border-sky-400 text-center pb-3 w-fit px-3.5 rounded-full">
         +
@@ -196,7 +196,7 @@ function Note({ note, onDeleteNote, onEditNote }) {
   }
 
   return (
-    <div className="bg-white relative flex flex-col justify-between transition-all h-[300px]  max-w-[260px] px-6 pt-5 rounded-md">
+    <div className="bg-white shadow-xl relative flex flex-col justify-between transition-all h-[300px]  max-w-[260px] px-6 pt-5 rounded-md">
       <div>
         <h1 className="text-blue-950 text-2xl font-semibold">{note.title}</h1>
         <p className="mt-3 font-normal text-gray-600">{note.description}</p>
